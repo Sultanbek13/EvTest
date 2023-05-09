@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/screenNews">
+
+    <fragment
+        android:id="@+id/screenNews"
+        android:name="com.sultandev.evtest.presentation.ui.news.NewsScreen"
+        android:label="PhotosScreen"
+        tools:layout="@layout/screen_news"
+        >
+        <action
+            android:id="@+id/action_screenNews_to_webViewScreen"
+            app:destination="@id/webViewScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewScreen"
+        android:name="com.sultandev.evtest.presentation.ui.webview.WebViewScreen"
+        android:label="WebViewScreen"
+        tools:layout="@layout/screen_web_view"
+        >
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+
+</navigation>

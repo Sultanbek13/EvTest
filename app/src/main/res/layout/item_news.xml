@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_standard"
+    android:layout_marginVertical="@dimen/margin_standard"
+    android:elevation="@dimen/el_size"
+    app:cardCornerRadius="@dimen/card_rd_size"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNew"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_standard"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_title_size"
+            android:textStyle="bold"
+            tools:text="Mr Trump was best president of all time in the America" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_standard"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescriptionDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin_standard"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:gravity="center"
+                android:padding="@dimen/padding_standard"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/tv_des_size" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2023.04.22"
+            android:layout_gravity="bottom|center"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/date_size"
+            android:gravity="center"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iconMore"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|end"
+            android:padding="@dimen/margin_small"
+            android:src="@drawable/caret_down"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EvTest</string>
+    <string name="empty_url">Пустая ссылка :(</string>
+    <string name="news">NEWS</string>
+</resources>
